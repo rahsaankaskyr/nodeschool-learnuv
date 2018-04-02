@@ -1,0 +1,44 @@
+
+
+learnuv
+
+the library that powers Node.js
+
+Before You Start
+
+Read the learnuv gitbook (http://thlorenz.github.io/learnuv/book)
+which explains some libuv and related C language concepts that will help you complete the exercises.
+
+
+
+git clone https://github.com/thlorenz/learnuv && cd learnuv
+
+npm install
+
+
+Running
+
+./learnuv
+
+
+
+
+
+Ninja
+
+Highly recommended since it builds faster than any of the other options, so get ninja and do:
+
+./gyp_learnuv.py -f ninja
+ninja -C out/Debug
+./out/Debug/01_system_info
+
+Make
+
+Works on Linux and OSX.
+
+./gyp_learnuv.py -f make
+make -C out
+./out/Debug/01_system_info
+
+
+
